@@ -1,10 +1,10 @@
 package pkgTestShape;
 import static org.junit.Assert.*;
 import java.util.Collections;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Test;
-import pkgShape.IllegalArguementException;
 import pkgShape.Rectangle;
 
 
@@ -51,7 +51,7 @@ public class RectangleTest {
 			
 			rec.add(new Rectangle(iLength, iWidth));
 		}
-		Collections.sort(rec);
+		Collections.sort((List<Rectangle>) rec);
 		
 		for (int i = 0; i < 9; i++) {
 			assertTrue(rec.get(i).area() <= rec.get(i + 1).area());
