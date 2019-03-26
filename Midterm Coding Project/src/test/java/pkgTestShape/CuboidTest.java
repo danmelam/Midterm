@@ -12,6 +12,7 @@ public class CuboidTest {
 	@Test
 	public void Cuboid_Test1() throws Exception{
 		new Cuboid(3, 5, 4);
+
 	}
 	@Test(expected = IllegalArguementException.class)
 	public void Cuboid_Test2() throws Exception{
