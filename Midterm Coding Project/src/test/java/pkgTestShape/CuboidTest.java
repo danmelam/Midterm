@@ -59,6 +59,8 @@ public class CuboidTest {
 			
 			cub.add(new Cuboid(iLength, iWidth, iDepth));
 		}
+		
+		
 		Collections.sort((List<Cuboid>) cub);
 		for(int i=0; i<9; i++) {
 			assertTrue(cub.get(i).area()<= cub.get(i+1).area());
